@@ -2,59 +2,44 @@ body
 {  
     background-color: rgb(120, 168, 240)
 }
-.image 
-{
-    position: relative;
-    width: 100%; 
-}
 
 h1
 {
-    position: absolute;
+    position: relative;
     top: 250px;
-    left: 0;
     width: 100%;
 }
 
 /* Thumbnail */
 .thumb
 {
-    position: relative;
     width: 1920px;
     height: 1080px;
 
-    background: #FFFFFF;
+    background: #FFFFFF
+    url("blue-mist.jpg");
+    background-size: cover;
     box-shadow: 2px 4px 9px 10px rgba(206, 223, 226, 0.75);
 }
 
-/* Background Image */
 
-img
-{
-    position: absolute;
-    width: 1920px;
-    height: 1080px;
-    left: 0px;
-    top: 0px;
-}
-
-
-/* fog */
 .mist
 {
-    position: absolute;
-    width: 93px;
-    height: 97px;
-    left: 45px;
-    top: 64px;
-    
+    display: flex;
+    justify-content: space-between;
+    width: 1890px;
+    height: 100px;
+
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
     font-size: 36px;
     line-height: 45px;
 
-    text-align: center;
     letter-spacing: 0.4em;
     text-transform: uppercase;
     
@@ -65,12 +50,12 @@ img
 /* more images */
 .text1
 {
-    position: absolute;
+    display: flex;
+    justify-content: right;
     width: 100%;
     height: 29px;
-    left: 1657px;
-    top: 91px;
-    margin-right: 300px;
+    left: 45px;
+    top: 64px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -78,7 +63,6 @@ img
     font-size: 18px;
     line-height: 75px;
    
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.4em;
@@ -90,57 +74,34 @@ img
 
 /* fog night
 */
+.logos
+{
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
 .fb
 {
-    position: absolute;
     width: 40px;
     height: 40px;
-    left: 77px;
-    top: 875px;
-}
-
-/* fog
-*/
-.inst
-{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 77px;
-    top: 993px;
-}
-
-/* fog day
-*/
-.twt
-{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 77px;
-    top: 934px;
-}
-
-/* group of text */
-.maintext1
-{
-    position: absolute;
-    width: 1468px;
-    height: 475px;
-    left: 226px;
-    top: 303px;
-
 }
 
 
 /* mist*/
 .mistxt
 {
-    position: absolute;
+    display: flex;
+    justify-content: center;
     width: 1400px;
-    height: 475px;
+    height: 400px;
     left: 250px;
-    top: 10px;
+    margin-top: 10px;
+    margin-bottom: 100px;
     
     font-family: 'Roboto';
     font-style: normal;
@@ -148,7 +109,6 @@ img
     font-size: 288px;
     line-height: 70px;
     
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.05em;
@@ -162,19 +122,19 @@ img
 /* what is */
 .maintextam
 {
-    position: absolute;
-    width: 141px;
-    height: 29px;
-    left: 712px;
-    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1910px;
+    height: 20px;
+    margin-top: 100px;
     
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 75px;
 
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.3em;
@@ -187,22 +147,33 @@ img
 /* also known as fog */
 .maintext2
 {
-    position: absolute;
-    width: 406px;
-    height: 29px;
-    left: 990px;
-    top: 699px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 200px;
+    height: 300px;
+   
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
     line-height: 40px;
-    
-    display: flex;
-    align-items: center;
+
+    text-align: end;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     
     color: rgba(255, 255, 255, 0.75);
+}
+
+.logotext
+{
+    display: flex;
+    justify-content: space-between;
+    width: 1890px;
+    height: 350px;
+
+    margin-right: 20px;
+    margin-left: 20px;
 }
